@@ -35,7 +35,7 @@ export default function dropDownMenu() {
 
             events.forEach(userEvent => {
 
-                html.addEventListener(userEvent, handleOutsideClick);
+                setTimeout(() => { html.addEventListener(userEvent, handleOutsideClick) });
 
             });
              
