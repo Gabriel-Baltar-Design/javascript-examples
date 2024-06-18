@@ -1,0 +1,75 @@
+[data-menu="button"] {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+
+    [data-menu="button"] {
+        display: block;
+    }
+
+    [data-menu="button"] {
+
+        display: flex;
+        background: #222;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 10px;
+        align-items: center;
+        position: relative;
+        z-index: 300;
+    
+    }
+
+    [data-menu="button"].active::before {
+
+        transform: rotate(90deg);
+
+    }
+    
+    [data-menu="button"]::before {
+        margin-right: 4px;
+        content: '';
+        display: inline-block;
+        height: 2px;
+        width: 12px;
+        background-color: #ffffff;
+        box-shadow: 0 4px #ffffff, 0 -4px #ffffff;
+        transition: transform 0.3s;
+    }
+    
+    [data-menu="list"]#menu {
+        display: none;
+        position: absolute;
+        background: #fb5;
+        width: 190px;
+        z-index: 200;
+        padding: 60px 0 20px 0;
+        top: 0px;
+        box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    [data-menu="list"]#menu.active {
+        display: block;
+        animation: shou-up 0.5s forwards;
+    }
+    
+    .dropdown-menu{
+        position: static;
+        border: none;
+        padding: 8px;
+        margin-left: 2px;
+        margin-right: 12px;
+    }
+    
+    .dropdown-menu::before {
+        position: static;
+    }
+
+}
