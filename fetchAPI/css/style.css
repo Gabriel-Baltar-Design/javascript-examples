@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.posts {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#f5f5f5;
+    max-width: 400px;
+    padding: 1rem 1rem;
+    border-radius: 4px;
+    gap: 1rem;
+}
+
+.posts h3 {
+    padding-bottom: 0.5rem;
+}
