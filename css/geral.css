@@ -337,3 +337,17 @@ ul {
 section {
     color: #222222;
 }
+
+[data-semana]::after {
+    display: inline-block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+[data-semana].aberto::after {
+    background: #3f4;
+}
