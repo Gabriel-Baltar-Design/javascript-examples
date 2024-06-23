@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Animais Fantasticos - JavaScript</title>
+</head>
+<body>
+
+    <form name="contato" id="contato" action="">
+        <label for="nome">Digite seu nome</label>
+        <input placeholder="Digite seu nome" type="text" name="nome" id="nome" required>
+        <span class="texto"></span>
+        <label for="email">Digite seu email</label>
+        <input placeholder="Digite seu email" type="email" name="email" id="email" required>
+        <span class="texto"></span>
+        <label for="mensagem">Mensagem</label>
+        <textarea placeholder="Mensagem..." type="mensagem" name="mensagem" id="mensagem"></textarea>
+        <label for="colors">Selecione a Cor</label>
+        <select name="colors" id="colors">
+            <option value="blue">Azul</option>
+            <option value="green">Verde</option>
+            <option value="red">Vermelho</option>
+        </select>
+
+        <label for="checkbox">Selecione o checkbox</label>
+        <input for="checkbox" type="checkbox" value="identidade" id="identidade">
+
+        <label for="color">Mudar cor</label>
+        <input type="color">
+
+        <label for="date">Selecione a Data</label>
+        <input type="date">
+
+        <label for="mensagem">Selecione a quantidade</label>
+        <input type="number">
+
+        <label for="mensagem">Selecione a Ragen</label>
+        <input type="range">
+
+        <label for="mensagem">Digite a senha</label>
+        <input type="password">
+
+    </form>
+    <span class="texto"></span>
+
+
+    <script type="module" src="./js/forms.js"></script>
+
+    <style>
+
+        label {
+
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            margin-top: 1rem;
+
+        }
+
+        form {
+
+            max-width: 400px;
+            margin: 0 auto;
+
+        }
+
+        input, textarea {
+
+            width: 100%;
+            padding: 0 1rem;
+            box-sizing: border-box;
+            padding: .5rem;
+            border: 1px solid #222;
+            border-radius: 0.25rem;
+
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        .invalido {
+            border-color: red;
+            border: 1px solid red;
+        }
+    
+        .texto {
+            font-size: 0.875rem;
+            color: red;
+            padding-top: 0.75rem;
+        }
+
+    </style>
+    
+</body>
+</html>
