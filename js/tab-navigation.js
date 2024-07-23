@@ -119,14 +119,16 @@ function initAnimacaoScroll(){
         }
       });
     }
-  
-    }
-  
+    
     animaScroll();
-  
+
     window.addEventListener("scroll", animaScroll);
+    
+  }
   
-  };
   
-  initAnimacaoScroll();
+  
+};
+  
+initAnimacaoScroll();
   
